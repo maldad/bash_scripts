@@ -1,0 +1,6 @@
+#/bin/bash
+user=$1
+echo user: $user
+echo UID: $(id $user -u)
+echo GIP: $(id $user -g)
+finger $user -l | grep Shell

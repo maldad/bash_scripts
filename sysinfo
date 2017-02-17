@@ -1,0 +1,16 @@
+#/bin/bash
+cat /etc/os-release | grep NAME=S
+cat /etc/os-release | grep VERSION=
+echo kernel version: $(uname -r)
+uptime -p
+# paquetes core
+echo SBo packages: $(ls /var/log/packages | grep SBo | wc -l)
+dmidecode | grep i5-4
+lspci | grep VGA
+cat /proc/meminfo | grep MemAvailable
+cat /proc/meminfo | grep MemTotal
+hostname
+hostname -d
+# interfaces de red
+# puertos TCP
+lsblk

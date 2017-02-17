@@ -1,0 +1,3 @@
+#/bin/bash
+pkg=$1
+slackpkg info $pkg | grep NAME
