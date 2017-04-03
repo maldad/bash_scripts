@@ -1,0 +1,1 @@
+sbopkg -i confuse -i yajl -i i3status

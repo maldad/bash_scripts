@@ -1,0 +1,1 @@
+sbopkg -i dmenu -i libev -i libxkbcommon -i xcb-util-xrm -i i3
