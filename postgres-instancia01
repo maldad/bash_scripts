@@ -1,0 +1,12 @@
+#!/bin/bash
+case "$1" in
+  "start")
+    pg_ctl -D /home/maldad/.local/var/pgsql/instancia01/data/ -l /home/maldad/.local/var/pgsql/instancia01/log/logfile start
+    ;;
+  "stop")
+    pg_ctl -D /home/maldad/.local/var/pgsql/instancia01/data/ -l /home/maldad/.local/var/pgsql/instancia01/log/logfile stop
+    ;;
+  "status")
+    pg_ctl -D /home/maldad/.local/var/pgsql/instancia01/data/ -l /home/maldad/.local/var/pgsql/instancia01/log/logfile status
+    ;;
+esac
