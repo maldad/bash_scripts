@@ -1,0 +1,11 @@
+#!/bin/bash
+# this file will generate a wallpaper and set it up
+# process-wallpaper repo: https://github.com/anirudhajith/process-wallpaper
+# I execute this file in `xmonad` using `dmenu`, so I don't have to keep an open terminal
+while true;
+do
+  cd /home/maldad/.local/opt/process-wallpaper/
+  python3 generateWallpaper.py
+  feh --bg-fill /home/maldad/.local/opt/process-wallpaper/wallpaper.png
+  sleep 60
+done
